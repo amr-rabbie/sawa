@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/light_green</item>
+        <item name="colorPrimaryDark">@color/light_green</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyDatePickerStyle" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+        <item name="android:headerBackground">@color/grey</item>
+    </style>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="Tablets and Mobiles"
+            android:textSize="15dp"
+            android:id="@+id/item_layout_for_views_categories"
+            android:background="@drawable/item_clicked"
+            android:textColor="@color/linktext"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/item_layout_for_views_seenORclear"
+            android:text="عرض الكل"
+            android:textColor="#018eec"
+            android:visibility="gone"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/main_activity_items_scroll"
+        android:overScrollMode="always"
+        android:layoutDirection="rtl"
+        android:scrollbars="none"
+        android:focusable="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/main_activity_items_layout"
+            android:layout_gravity="end"/>
+    </HorizontalScrollView>
+</LinearLayout>

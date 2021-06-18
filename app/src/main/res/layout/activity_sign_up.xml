@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.ahmedezz.aveway111.SignUp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/splach">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:background="@drawable/text"
+            android:cursorVisible="true"
+            android:textSize="@dimen/text_size_login_reg"
+
+            android:drawableLeft="@mipmap/email"
+
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/SignUp_email_edittext"
+            tools:ignore="RtlHardcoded,RtlSymmetry"
+            android:maxLines="1"
+            android:hint="@string/email"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_lastname_editText2"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_lastname_editText2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_lastname_editText2"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@drawable/text"
+            android:ems="10"
+            android:textSize="@dimen/text_size_login_reg"
+
+            android:id="@+id/SignUp_password_edittext"
+                        android:cursorVisible="true"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry"
+            android:maxLines="1"
+            android:drawableLeft="@mipmap/pass"
+            android:drawablePadding="5dp"
+            android:hint="@string/password"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_email_edittext"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_email_edittext"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_email_edittext"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <Button
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignUp_register_button"
+            android:background="@color/light_green"
+            android:textAllCaps="false"
+            android:text="@string/register"
+            android:textSize="@dimen/text_size_login_reg"
+
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_female_checkbox"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_male_checkbox"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_female_checkbox"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.504" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ave"
+            android:id="@+id/imageView2"
+            android:contentDescription=""
+            tools:ignore="ContentDescription"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline"-->
+        <!--android:orientation="vertical"-->
+        <!--tools:layout_editor_absoluteY="0dp"-->
+        <!--tools:layout_editor_absoluteX="84dp"-->
+        <!--app:layout_constraintGuide_percent="0.21875"/>-->
+        <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline2"-->
+        <!--android:orientation="vertical"-->
+        <!--tools:layout_editor_absoluteY="0dp"-->
+        <!--tools:layout_editor_absoluteX="320dp"-->
+        <!--app:layout_constraintGuide_percent="0.8333333"/>-->
+
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text|phone"
+            android:ems="10"
+            android:background="@drawable/text"
+                        android:cursorVisible="true"
+            android:drawableLeft="@mipmap/mobil"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:hint="@string/mobile"
+            android:textSize="@dimen/text_size_login_reg"
+
+            tools:ignore="RtlHardcoded,RtlSymmetry"
+            android:maxLines="1"
+            android:id="@+id/SignUp_mobile_edittext"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_confirm_edittext"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_confirm_edittext"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_confirm_edittext"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <CheckBox
+            android:text="@string/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignUp_male_checkbox"
+            android:textColorHint="#9D2BA0"
+
+            android:textSize="@dimen/text_size_login_reg"
+
+
+            app:layout_constraintRight_toRightOf="@+id/SignUp_birthdate_edittext"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_birthdate_edittext" />
+
+        <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline3"-->
+        <!--android:orientation="vertical"-->
+        <!--tools:layout_editor_absoluteY="0dp"-->
+        <!--tools:layout_editor_absoluteX="192dp"-->
+        <!--app:layout_constraintGuide_percent="0.5"/>-->
+
+        <CheckBox
+            android:text="@string/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignUp_female_checkbox"
+            android:textColorHint="#9D2BA0"
+
+            android:textSize="@dimen/text_size_login_reg"
+
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_birthdate_edittext"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_birthdate_edittext" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/text"
+                        android:cursorVisible="true"
+            android:drawableLeft="@mipmap/birth"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:focusable="false"
+            android:hint="@string/birthdate"
+            tools:ignore="RtlHardcoded,RtlSymmetry"
+            android:textSize="@dimen/text_size_login_reg"
+
+
+
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/SignUp_birthdate_edittext"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_mobile_edittext"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_mobile_edittext"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_mobile_edittext"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <EditText
+            android:id="@+id/SignUp_firstname_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/text"
+            android:cursorVisible="true"
+            android:drawableLeft="@mipmap/user"
+
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/firstName"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/text_size_login_reg"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_size_login_reg"
+            android:drawableLeft="@mipmap/user"
+            android:ems="10"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/SignUp_lastname_editText2"
+            android:hint="@string/lastName"
+                        android:cursorVisible="true"
+            android:background="@drawable/text"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_firstname_editText"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_firstname_editText"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_firstname_editText"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="16dp" />
+
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:text="wrong first name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/SignUp_wrongfirstname_textview"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_firstname_editText"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_firstname_editText"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/text_size_login_reg"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_firstname_editText"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:visibility="gone" />
+
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:text="Wrong Last name"
+            android:layout_height="0dp"
+            android:id="@+id/SignUp_wronglastname_textview"
+            android:textSize="@dimen/text_size_login_reg"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_lastname_editText2"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_lastname_editText2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_lastname_editText2"
+            android:layout_width="0dp"
+            android:visibility="gone" />
+
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:text="Wrong Email"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/SignUp_email_textview"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_email_edittext"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_email_edittext"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/text_size_login_reg"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_email_edittext"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:visibility="gone" />
+
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:text="Wrong Password"
+            android:layout_height="0dp"
+            android:id="@+id/SignUp_wrongpassword_textview"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/text_size_login_reg"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_password_edittext"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_password_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_password_edittext"
+            android:layout_width="0dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/SignUp_confirm_edittext"
+            android:hint="@string/confoirmpassword"
+            android:drawableLeft="@mipmap/pass"
+            android:drawablePadding="5dp"
+            android:background="@drawable/text"
+            android:maxLines="1"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/text_size_login_reg"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_password_edittext"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_password_edittext"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_password_edittext"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:text="Wrong Confirm"
+            android:layout_height="0dp"
+            android:id="@+id/SignUp_wrongconfirm_textview"
+            android:textSize="@dimen/text_size_login_reg"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_confirm_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_confirm_edittext"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_confirm_edittext"
+            android:layout_width="0dp"
+            android:visibility="gone" />
+
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:text="Wrong Mobile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/SignUp_wrongmobile_textview"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/text_size_login_reg"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_mobile_edittext"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_mobile_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_mobile_edittext"
+            android:visibility="gone" />
+
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:text="Wrong BirthDate"
+            android:layout_height="0dp"
+            android:id="@+id/SignUp_wrongdate_textview"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/text_size_login_reg"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_birthdate_edittext"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_birthdate_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_birthdate_edittext"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_width="0dp"
+            android:visibility="gone" />
+
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:text="Please select Gender"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/SignUp_wronggender_textview"
+            app:layout_constraintLeft_toLeftOf="@+id/SignUp_female_checkbox"
+            app:layout_constraintRight_toRightOf="@+id/SignUp_male_checkbox"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/text_size_login_reg"
+            app:layout_constraintTop_toBottomOf="@+id/SignUp_male_checkbox"
+            android:visibility="gone" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="16dp"
+    android:clickable="false">
+
+    <solversteam.aveway.utiltes.TextViewWithFont
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16dp"
+        android:textColor="@color/Black"
+        android:text="255 results"
+        android:id="@+id/activity_categories_results_text"
+        android:clickable="false"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_fashion_sort"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/activity_categories_sort_imageButton"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+        <!--<LinearLayout-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/Black"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:padding="12dp"-->
+            <!--android:layout_gravity="center"/>-->
+        <!--<ImageButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@mipmap/ic_fashion_grid"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:padding="12dp"-->
+            <!--android:id="@+id/activity_categories_grid_imageButton"/>-->
+        <!--<ImageButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@mipmap/list_view"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/activity_categories_list_imageButton"/>-->
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/toolbar"
+        android:id="@+id/include"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:id="@+id/scroll"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img"
+                android:src="@drawable/defaultimage"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/profile_image_image"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/img"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mohamd"
+                    android:maxLines="2"
+                    android:id="@+id/name"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3.922"
+                    android:id="@+id/price"
+                    android:layout_gravity="start"
+                    android:textSize="20dp"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3.922"
+                    android:textSize="20dp"
+
+                    android:id="@+id/shippingprice"
+                     android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="total price 30 "
+                    android:textSize="20dp"
+
+                    android:layout_gravity="start"
+                    android:textColor="@color/red"
+                    android:id="@+id/total_price"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20-3-2015"
+                    android:id="@+id/date"
+                     android:clickable="true"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                     android:textColor="@color/avecolor"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20-3-2015"
+                    android:id="@+id/delverydate"
+                    android:clickable="true"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/avecolor"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>

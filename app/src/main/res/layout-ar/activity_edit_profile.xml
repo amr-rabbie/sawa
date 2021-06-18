@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MainBackground"
+    android:orientation="vertical"
+    tools:context="solversteam.aveway.Activities.EditProfile">
+
+    <include
+        android:id="@id/include"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/EditProfile_First_Name_edittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/firstName"
+                                android:inputType="textCapWords"
+                                android:textColor="@color/Black"
+                                android:textColorHint="@color/Black"
+                                android:textCursorDrawable="@color/boticoncolor" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/EditProfile_last_Name_edittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/lastName"
+                                android:inputType="textCapWords"
+                                android:textCursorDrawable="@color/boticoncolor" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="23dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/EditProfile_mobile_edittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/mobile"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="23dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/EditProfile_birthdate_edittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:hint="@string/birthdate" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/EditProfile_Password_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:gravity="right"
+                            android:textCursorDrawable="@color/boticoncolor" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        >
+
+                        <EditText
+                            android:id="@+id/EditProfile_confirmpassword_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/confoirmpassword"
+                            android:inputType="textPassword"
+                            android:gravity="right"
+                            android:textCursorDrawable="@color/boticoncolor" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        >
+
+                        <EditText
+                            android:id="@+id/EditProfile_email_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email"
+                            android:inputType="text"
+                            android:gravity="right"
+                            android:textCursorDrawable="@color/boticoncolor" />
+                    </android.support.design.widget.TextInputLayout>
+
+                     </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_below="@+id/card"
+                android:paddingTop="32dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!---->
+                    <!--android:orientation="horizontal">-->
+                    <Button
+                        android:id="@+id/EditProfile_Update_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/sixteenth"
+                         android:textAllCaps="false"
+                        android:background="@color/light_green"
+                        android:text="@string/updateprofile"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/descriptionTextheader" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:text="@string/cancel"
+                        android:layout_below="@+id/EditProfile_Update_button"
+                        android:background="@color/light_green"
+                        android:textColor="@color/White"
+                        android:layout_margin="@dimen/sixteenth"
+                        android:textSize="@dimen/descriptionTextheader"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/EditProfile_Cancel_button"
+                        android:textAllCaps="false"
+                        android:layout_marginBottom="@dimen/sixteenth"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@mipmap/ic_key" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/resetPassword"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:text="Reset Password"-->
+                    <!--android:textColor="@color/linktext"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textStyle="bold" />-->
+                    <!--</LinearLayout>-->
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

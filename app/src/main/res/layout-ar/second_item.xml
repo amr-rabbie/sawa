@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/item_image_name_container"
+            android:background="@drawable/item_clicked">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_marginTop="@dimen/sixteenth">
+                <ImageView
+                    android:id="@+id/product"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    />
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/prog"
+                    style="@style/CircularProgress"
+
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@color/offerbackground"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/offerContainer">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="@dimen/third"
+                    android:paddingLeft="@dimen/reviewcontent"
+                    android:paddingRight="@dimen/reviewcontent"
+                    android:paddingTop="@dimen/third"
+                    android:text="خصم 7%"
+                    android:textColor="@color/White"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:id="@+id/offer"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenth"
+                android:layout_marginRight="@dimen/sixteenth"
+                android:layout_marginBottom="@dimen/sixteenth"
+                android:layout_marginTop="@dimen/eighth"
+                android:text="موبيل تابلت"
+                android:ellipsize="end"
+                android:lines="2"
+                android:maxLines="2"
+                android:textSize="@dimen/descriptionTextcontent"
+                android:textColor="@color/Black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strike_line"
+                android:text="3,649.00 EGP"
+                android:layout_marginRight="@dimen/sixteenth"
+                android:textColor="@color/wallet_hint_foreground_holo_light"
+                android:textSize="10dp"
+                android:id="@+id/prevPrice"/>
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12,000 EGP"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="@dimen/sixteenth"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/descriptionTextcontent"
+                android:layout_marginBottom="@dimen/eighth"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

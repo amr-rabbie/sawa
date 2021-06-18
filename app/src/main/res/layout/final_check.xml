@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include"></include>
+<ScrollView
+
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:fillViewport="true"
+    android:background="@color/bglist"
+    android:layout_below="@+id/include"
+    android:id="@+id/scroll"
+    >
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="7dp"
+     >
+
+
+
+    <solversteam.aveway.utiltes.TextViewWithFont
+        android:text="Shipping Options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/option_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/option_text"
+        android:layout_marginTop="20dp"
+        android:id="@+id/card">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <solversteam.aveway.utiltes.TextViewWithFont
+                android:text="Shipping to the delivery address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp" />
+            <solversteam.aveway.utiltes.TextViewWithFont
+                android:text="Shipping Within: 6 days "
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ship_info_text"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:visibility="gone"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/address"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_below="@+id/address"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+                <ImageView
+                    android:id="@+id/profile_image_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_map_icon"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/profile_image_image"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="12dp"
+
+                    >
+                    <solversteam.aveway.utiltes.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mohamd"
+                        android:id="@+id/name"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black"
+                        android:layout_gravity="start"
+
+                        android:layout_marginTop="15dp"/>
+
+                    <solversteam.aveway.utiltes.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mohckndkndkndknddnamd"
+                        android:id="@+id/address_saved_text"
+                        android:maxLines="2"
+
+                        android:layout_gravity="start"
+
+                        android:layout_marginTop="8dp"/>
+                    <solversteam.aveway.utiltes.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+200120016218"
+                        android:id="@+id/mobile"
+                        android:layout_gravity="start"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black"
+                        android:layout_marginTop="8dp"/>
+                    <solversteam.aveway.utiltes.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change of Address"
+                        android:layout_gravity="start"
+                        android:textSize="16dp"
+                        android:textColor="@color/red"
+                        android:id="@+id/change_add"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <solversteam.aveway.utiltes.TextViewWithFont
+        android:text="Shipping to my Adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:id="@+id/text_text"
+android:textColor="@color/Black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_text"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:id="@+id/Relativ_contain"
+
+        >
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domestic Shipping Service: Free Shipping"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:textSize="18dp"
+            android:id="@+id/text12"
+            android:visibility="gone"/>
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6 days \t \t  by Aramex"
+            android:visibility="gone"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/text12"
+            android:layout_marginBottom="10dp"
+            android:textSize="19dp"/>
+
+    </RelativeLayout>
+    <solversteam.aveway.utiltes.ExpandableHeightGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Relativ_contain"
+        android:layout_marginTop="5dp"
+        android:id="@+id/list_view"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_view"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <solversteam.aveway.utiltes.TextViewWithFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="total"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="start"
+                android:layout_gravity="start"
+
+
+                android:layout_marginTop="10dp"/>
+            <solversteam.aveway.utiltes.TextViewWithFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Shipping"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+            <solversteam.aveway.utiltes.TextViewWithFont
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text=" grand total"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:visibility="gone"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/linear"
+            >
+            <solversteam.aveway.utiltes.TextViewWithFont
+                android:layout_width="120dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:text="3.999 EGP"
+                 android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/total_text"
+                android:textColor="@color/black"/>
+            <solversteam.aveway.utiltes.TextViewWithFont
+                android:layout_width="120dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:text="Free Shipping"
+                 android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/ship_text"
+android:visibility="gone"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+            <solversteam.aveway.utiltes.TextViewWithFont
+                android:layout_width="120dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+
+                android:visibility="gone"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:text="3.999 EGP"
+                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/total_with_ship"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linear"
+            android:background="@color/light_green"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/ship_btn"
+            android:text="make payment"
+            android:textStyle="bold"
+             android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>
+   </RelativeLayout>

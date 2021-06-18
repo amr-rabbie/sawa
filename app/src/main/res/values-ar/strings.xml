@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SawaMall</string>
+    <string name="app_nam">SawaMall</string>
+    <string name="categories">الاقسام</string>
+    <string name="MyWallet">محفظتى</string>
+    <string name="myAccount">الصفحه الشخصية</string>
+
+    <string name="ViewHistory">عرض التاريخ</string>
+    <string name="ReferandEarn">الرجوع و الكسب</string>
+    <string name="HelpCenter">مركز المساعدة</string>
+    <string name="RateUs">قيمنا</string>
+    <string name="LogOut">تسجيل الخروج</string>
+    <string name="Home">الرئيسيه</string>
+    <string name="SeeAll">عرض الكل</string>
+    <string name="ClearAll">حذف الكل</string>
+    <string name="RecentlySeen">شوهدت مؤخرا</string>
+    <string name="FindBeastDeal">البحث عن أفضل العروض </string>
+    <string name="BrowseByCategory">تصفح حسب الفئه</string>
+    <string name="TabletsandMobiles">موبايلات و تايلت</string>
+    <string name="changeCity">تغير\nالمدينه</string>
+    <string name="City">تشحن الى <b>القاهره</b></string>
+    <string name="day">احصل عليها <b>السبت ٤ فبراير</b></string>
+    <string name="AddtoChart"><b>اضف الى العربه</b></string>
+    <string name="Seller">البائع</string>
+    <string name="shortdetails">تفاصيل قصيره</string>
+    <string name="Description">تفاصيل</string>
+    <string name="ReadMore">اقرا المزيد</string>
+    <string name="Specifications">المواصفات</string>
+    <string name="Rated">التقييم</string>
+    <string name="ReadFullReview">قراءة جميع التقييمات</string>
+    <string name="Color">اللون</string>
+    <string name="WriteReview">اكتب تقيمك</string>
+    <string name="readLess">اقرا اقل</string>
+    <string name="readMore">اقرا اكثر</string>
+    <string-array name="countries">
+        <item>الإمارات العربية المتحدة</item>
+        <item>البحرين</item>
+        <item>سلطنة عمان</item>
+        <item>دولة قطر</item>
+    </string-array>
+    <string-array name="city">
+        <item>العالي</item>
+        <item>عدالة</item>
+        <item>آل المالكية</item>
+        <item>البديع</item>
+        <item>مدينة حمد</item>
+        <item>مدينة عيسى</item>
+        <item>جدحفص</item>
+        <item>المنامة</item>
+        <item>المحرق</item>
+        <item>الرفاع</item>
+    </string-array>
+    <string-array name="location">
+        <item>منزل</item>
+        <item>عمل</item>
+    </string-array>
+    <string-array name="Time">
+        <item>9:00صباحا-1:00مساء</item>
+        <item>1:00مساء-5:00مساء</item>
+        <item>5:00مساء-9:00مساء</item>
+    </string-array>
+    <string-array name="shipping">
+        <item>اليوم</item>
+        <item>غدا</item>
+        <item>يومان</item>
+        <item>3 ايام</item>
+        <item>4 ايام</item>
+        <item>5 يام</item>
+        <item>6 ايام </item>
+        <item>اسبوع</item>
+    </string-array>
+    <string-array name="account">
+        <item>طلباتى</item>
+        <item>المفضله</item>
+        <!--<item>العناوين</item>-->
+        <item>البلد واللغه</item>
+        <item>تواصل معنا</item>
+        <item>اتصل بنا</item>
+        <item>مشاركه مع الاصدقاء</item>
+        <item>اترك ملاحظات</item>
+        <item>قم بتقيمنا على متجر بلاى</item>
+    </string-array>
+    <string name="account">ادارة حسابى</string>
+    <string name="apply">تطبيق</string>
+    <string name="lang">الرجاء اختيار اللغه.</string>
+    <string name="country">اختر الدولة</string>
+    <string name="shippingcountry">-قم باختيار بلد الشحن-</string>
+    <string-array name="Languages">
+        <item>انجليزى</item>
+        <item>عربى</item>
+    </string-array>
+    <string name="pref_locale">ar</string>
+    <string name="userName">اسم المستخدم</string>
+    <string name="register">مستخدم جديد</string>
+    <string name="firstName">الاسم الاول </string>
+    <string name="lastName">الاسم العائله</string>
+    <string name="email">البريد الالكترونى </string>
+    <string name="mobile">موبايل</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثى</string>
+    <string name="birthdate">تاريخ الميلاد</string>
+    <string name="signwithfacebook">سجل باستخدام الفيس بوك</string>
+    <string name="password">كلمه المرور</string>
+    <string name="confoirmpassword">تأكيد كلمه المرور</string>
+    <string name="showpassword">اظهار كلمه المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="updateprofile">تعديل البيانات</string>
+    <string name="cancel">الغاء</string>
+    <string name="welcome">مرحبا</string>
+    <string name="Countryandlanguage">البلد واللغه</string>
+    <string name="myWishList">المفضله</string>
+    <string name="myCart">عربة التسوق</string>
+    <string name="address">*العنوان*</string>
+    <string name="firstname_">الاسم الاول*</string>
+    <string name="lastname_">الاسم العائله*</string>
+    <string name="selectcountry">*من فضلك اختر البلد</string>
+    <string name="selectcity">*من فضلك اختر المدينه</string>
+    <string name="mobile_">رقم التليفون*</string>
+    <string name="locationtype">المكان</string>
+    <string name="saveaddress">حفظ العنوان</string>
+    <string name="cashondelivery">الدفع عند التوصيل</string>
+    <string name="creditcard">بطاقة إئتمان</string>
+    <string name="selectpaymentoption">اختر طريقه الدفع</string>
+    <string name="checkout">الدفع</string>
+    <string name="youadd">تم اضافة المنتج للعربة</string>
+    <string name="No">لا</string>
+    <string name="yes">نعم</string>
+    <string name="close_app">هل تود الخروج من </string>
+    <string name="addfav">تم اضافة المتج لقائمة المفضلة</string>
+    <string name="removefav">تم ازالة المنتج من قائمة المفضلة</string>
+    <string name="msg_cart">عربة التسوق فارغة</string>
+    <string name="msg_wish">القائمة المفضلة فارغة</string>
+    <string name="msg_cart_wish_2">املائها بما يحلو لك</string>
+    <string name="btnpop">شاهد منتجاتنا واستمتع بالعروض</string>
+    <string name="allCategories">view all categories</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="DrawerIsOPend">"Drawer Is Opend"</string>
+    <string name="DrawerIsClosed">"Drawer Is Closed"</string>
+    <string name="NoDataArrived">لا يوجد معلومات</string>
+    <string name="edittext_hint"><font size="12">هنا!</font></string>
+    <string name="addaddress">العناوين</string>
+    <string name="addship">اختر شركات الشحن</string>
+    <string name="check">مراجعة البيانات</string>
+    <string name="checkpass">كلمة السر التي ادخلتها غير صحيحة</string>
+    <string name="editp">تعديل البيانات</string>
+    <string name="option">خيارات الدفع</string>
+    <string name="ordernum">رقم الطلب</string>
+    <string name="totalg">اجمالى الطلب</string>
+    <string name="doneorder">تم عمل الطلب بنجاح</string>
+    <string name="optorder"> تم اختيار الدفع عند الاستلام</string>
+    <string name="back">متابعة التسوق </string>
+    <string name="selectship">برجاء اختيار مدينة الشحن</string>
+    <string name="msglogin">برجاء تسجيل الدخول</string>
+    <string name="myorder">طلباتي</string>
+    <string name="price">الثمن</string>
+    <string name="ptotalrice">الثمن الكلي</string>
+    <string name="shiping">ثمن الشحن</string>
+    <string name="date">تاريخ الطلب</string>
+    <string name="deldate">تاريخ التسليم</string>
+    <string name="Name">لاسم</string>
+    <string name="contact">تواصل معانا </string>
+    <string name="call">اعرف عننا</string>
+    <string name="share">شارك مع اصدقائك</string>
+    <string name="feed">رايك</string>
+    <string name="rate">قم بتقيمنا على متجر بلاي</string>
+    <string name="status">حالة الطلب</string>
+    <string name="type">نوع دفع الطلب</string>
+    <string name="myaddress">العناوين</string>
+    <string name="search">بحث</string>
+    <string name="results">منتج</string>
+    <string name="rtl">rtl</string>
+    <string name="qnt">الكمية</string>
+    <string name="canceled">تم الغاء الطلب</string>
+    <string name="orderid">رقم الطلب</string>
+    <string name="youalreadyadd">المنتج مُضاف بالفعل في العربة التسوق</string>
+    <string name="tracking_number">رقم التتبعي :</string>
+    <string name="expected_delivery"> يوم التسليم المتوقع:</string>
+    <string name="required">مطلوب!</string>
+    <string name="recfirstname">يجب ع الاقل ان يكون الاسم الاول مكون من حرفين</string>
+    <string name="reclastname">يجب ع الاقل ان يكون الاسم الثاني مكون من حرفين</string>
+    <string name="recpass">يجب ان يكون كلمة السر لا تقل عن 6 احرف او ارقام</string>
+    <string name="recpassconfirm">تأكيد كلمة السر غير صحيح</string>
+    <string name="recemail">برجاء كتابة البريد بطريقة صحيحة</string>
+    <string name="recbirth">برجاء كتابة يوم الميلاد</string>
+    <string name="valid">هذا البريد مسجل من قبل </string>
+    <string name="recmob">برجاء تسجيل رقم الموبايل</string>
+    <string name="facebook_app_id">1423353397727165</string>
+    <string name="updte">لم يحدث تعديل</string>
+    <string name="addnewaddress">اضف عنوان </string>
+    <string name="conf_order">تأكيد الطلب</string>
+    <string name="atleast">فإنه سيتم تسليمه إلى شركة النقل على الأقل</string>
+    <string name="message">الرسالة</string>
+    <string name="send">ارسال</string>
+</resources>

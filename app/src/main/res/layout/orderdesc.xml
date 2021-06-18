@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/include"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/orders"
+                android:layout_gravity="left"
+                 android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/imag"
+                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order refrence"
+                    android:textSize="25dp"
+                    />
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1234568"
+                        android:textSize="25dp"
+                        android:id="@+id/orderid"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_clicked"
+                    android:id="@+id/free_shipping_text"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+
+
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/profile_image_image"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        >
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text="Order Placed"
+                                            android:layout_weight="1.2"
+
+                                            android:textSize="16dp"
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text=" "
+                                            android:paddingLeft="2dp"
+                                            android:layout_weight=".5"
+                                            android:id="@+id/order_dates"
+                                            android:textSize="16dp"
+                                            android:layout_gravity="left"
+                                            android:gravity="left"
+
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                    <LinearLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:background="@drawable/line"/>
+                                     <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                         android:layout_weight="1"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_height="wrap_content">
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text="Order to"
+                                            android:layout_weight="1.2"
+                                            android:textSize="16dp"
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text=" "
+                                            android:layout_weight=".5"
+                                            android:textSize="16dp"
+                                            android:id="@+id/order_name"
+                                            android:layout_gravity="left"
+                                            android:gravity="left"
+
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:visibility="gone"
+                                        android:background="@drawable/line"/>
+                                      <LinearLayout
+                                          android:visibility="gone"
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                         android:layout_weight="1"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_height="wrap_content">
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text="Address"
+                                            android:layout_weight="1.2"
+                                            android:textSize="16dp"
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text=" "
+                                            android:layout_marginRight="5dp"
+                                            android:layout_weight=".5"
+                                            android:textSize="12dp"
+                                            android:id="@+id/order_adress"
+                                            android:layout_gravity="left"
+                                            android:gravity="left"
+                                            android:maxLines="2"
+
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:background="@drawable/line"/>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="2dp"                            >
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Payment: "
+                                android:layout_gravity="start"
+                                android:textSize="16dp"
+                                android:layout_weight="1.2"
+                                android:textColor="?android:textColorHint"
+                                android:layout_marginTop="8dp"/>
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Cash on Delivery"
+                                android:textSize="16dp"
+                                android:id="@+id/type_order"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:paddingLeft="2dp"
+                                android:textColor="?android:textColorHint"
+                                android:layout_marginTop="8dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/line"/>
+                          <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp">
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/status"
+                                android:id="@+id/shippingprice"
+                                android:layout_gravity="start"
+                                android:layout_weight="1.2"
+
+                                android:textColor="?android:textColorHint"
+                                android:textSize="16dp"/>
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:layout_weight=".5"
+
+                                android:id="@+id/status"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:textColor="?android:textColorHint"
+                                android:textSize="16dp"/>
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp">
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tracking_number"
+                                android:id="@+id/tracking_number"
+                                android:layout_gravity="start"
+                                android:layout_weight="1.2"
+
+                                android:textColor="?android:textColorHint"
+                                android:textSize="16dp"/>
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:layout_weight=".5"
+
+                                android:id="@+id/tracking_number_value"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:textColor="?android:textColorHint"
+                                android:textSize="16dp"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp">
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expected_delivery"
+
+                                android:layout_gravity="start"
+                                android:layout_weight="1.2"
+
+                                android:textColor="?android:textColorHint"
+                                android:textSize="16dp"/>
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:layout_weight=".5"
+
+                                android:id="@+id/expected_delivery"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:textColor="?android:textColorHint"
+                                android:textSize="16dp"/>
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                 >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:orientation="vertical"
+                                    >
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Order Summery "
+                                        android:layout_weight="1"
+
+                                        android:layout_gravity="start|left"
+                                        android:clickable="true"
+                                        android:maxLines="1"
+                                        android:textSize="25dp"
+                                        android:textColor="@color/Black"
+
+                                         />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/searchactivity"
+                                        android:layout_marginTop="20dp"
+                                        android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                       android:layout_marginBottom="10dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center_vertical"
+                                        android:text="Description"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center_vertical"
+                                            android:text=""
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_weight="1"
+                                            />
+                                    </LinearLayout>
+                                    <solversteam.aveway.utiltes.ExpandableHeightGridView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/Relativ_contain"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginBottom="8dp"
+                                        android:id="@+id/list_view"/>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:background="@drawable/line"/>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginTop="10dp">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="sub total :"
+                                                android:textSize="16dp"/>
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:textSize="16dp"
+                                                android:text=""
+                                                android:gravity="right"
+                                                android:id="@+id/subtotal"/>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:layout_marginTop="15dp">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="shipping :"
+                                                android:textSize="16dp"/>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:textSize="16dp"
+                                                android:text=""
+                                                android:gravity="right"
+                                                android:id="@+id/shipping"/>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:layout_marginTop="15dp">
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="shipping via :"
+                                                android:textSize="16dp"/>
+
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:textSize="16dp"
+                                                android:text=""
+                                                android:gravity="right"
+                                                android:id="@+id/shipping_via"/>
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:layout_marginTop="15dp">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="Shipping :"
+                                                android:textSize="16dp"/>
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:textSize="16dp"
+                                                android:text=""
+                                                android:gravity="left"
+                                                android:id="@+id/shipping_lo"/>
+                                        </LinearLayout>
+
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:layout_marginTop="15dp">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="Total:"
+                                                android:textSize="16dp"/>
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:textSize="16dp"
+                                                android:text=""
+                                                android:gravity="right"
+                                                android:id="@+id/total"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/sixteenth"
+            android:id="@+id/contain"
+            android:layout_toLeftOf="@+id/activity_category_product_add_to_wishlist_image_button">
+
+            <ImageView
+                android:id="@+id/activity_category_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/m1"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/prog"
+                style="@style/CircularProgress"
+
+                />
+        </RelativeLayout>
+
+         <LinearLayout
+            android:id="@+id/item_image_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/contain"
+            android:background="@drawable/item_clicked"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/offerContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/offerbackground"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/activity_category_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="@dimen/third"
+                    android:paddingLeft="@dimen/reviewcontent"
+                    android:paddingRight="@dimen/reviewcontent"
+                    android:paddingTop="@dimen/third"
+                    android:text="7% OFF"
+                    android:textColor="@color/White"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <solversteam.aveway.utiltes.TextViewWithFont
+                android:id="@+id/activity_category_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenth"
+                android:layout_marginRight="@dimen/sixteenth"
+                android:layout_marginTop="@dimen/eighth"
+                android:ellipsize="end"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="tablet how ?6651352132135135132123215"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/descriptionTextcontent" />
+
+            <solversteam.aveway.utiltes.TextViewWithFont
+                android:id="@+id/activity_category_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/eighth"
+                android:layout_marginLeft="@dimen/sixteenth"
+                android:layout_marginTop="8dp"
+                android:text="12,000 EGP"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/descriptionTextcontent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activity_category_product_prev_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenth"
+                android:background="@drawable/strike_line"
+                android:text="3,649.00 EGP"
+                android:textColor="@color/wallet_hint_foreground_holo_light"
+                android:textSize="10dp"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_image_name_container"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/activity_category_product_add_to_chart_button"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/light_green"
+                android:text="ADD To Chart"
+                android:textColor="@color/White"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/activity_category_product_add_to_chart_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/square"
+                android:padding="15dp"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/activity_category_product_add_to_wishlist_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_wishlist_outline_disable" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/third"
+    android:layout_marginRight="@dimen/third"
+    android:layout_marginTop="@dimen/twentyfour">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_clicked">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sixteenth"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/twentyfour"
+                    android:orientation="vertical">
+
+                    <solversteam.aveway.utiltes.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/descriptionTextheader"
+                        foo:customFont="abc.ttf"
+                        android:id="@+id/activity_details_description_text"/>
+
+                    <WebView
+                        android:id="@+id/activity_details_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr"
+                        android:layout_marginTop="@dimen/eighth"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/descriptionTextcontent" />
+
+                    <solversteam.aveway.utiltes.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sixteenth"
+                        android:text="Read More"
+                        foo:customFont="abc.ttf"
+                        android:id="@+id/more_desc"
+                        android:textColor="@color/linktext"
+                        android:background="@drawable/item_clicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/eighth"
+                    android:background="@color/MainBackground" />
+            </LinearLayout>
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_margin="@dimen/eighth"-->
+                <!--android:src="@mipmap/ic_arrow_nav_next" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_clicked">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sixteenth"
+                android:orientation="vertical"
+                android:background="@drawable/item_clicked"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/twentyfour"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Specifications"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/descriptionTextheader" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/eighth"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/activity_details_specifications_container">
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sixteenth"
+                        android:text="Read More"
+                        android:textColor="@color/linktext"
+                        android:background="@drawable/item_clicked"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_margin="@dimen/eighth"-->
+                <!--android:src="@mipmap/ic_arrow_nav_next" />-->
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

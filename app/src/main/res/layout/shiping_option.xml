@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ls="http://schemas.android.com/tools">
+    <include layout="@layout/toolbar"
+        android:id="@+id/include"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/shipping_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/addship"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"/>
+
+            <solversteam.aveway.utiltes.ExpandableHeightGridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Relativ_contain"
+
+                android:layout_marginTop="5dp"
+                android:id="@+id/list_view"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>

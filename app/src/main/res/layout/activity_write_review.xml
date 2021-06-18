@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_write_review"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="solversteam.aveway.Activities.WriteReviewActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar1"
+        android:layout_centerHorizontal="true"
+        android:text="Tap on star to rate" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/Review_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Review Title"
+                android:inputType="textCapWords"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:textCursorDrawable="@color/boticoncolor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/what_is_items_good"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Whats good about this items"
+                android:inputType="textCapWords"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:textCursorDrawable="@color/boticoncolor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/what_is_not_items_good"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Whats not good about this items"
+                android:inputType="textCapWords"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:textCursorDrawable="@color/boticoncolor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/min_characters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Review(Min 100 characters"
+                android:inputType="textCapWords"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:textCursorDrawable="@color/boticoncolor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:text="Recommend this item to a friend"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_save_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        android:text="SUBMIT REVIEW"
+        android:layout_margin="8dp"
+        android:textColor="@color/White"
+        android:textSize="@dimen/descriptionTextheader" />
+</RelativeLayout>

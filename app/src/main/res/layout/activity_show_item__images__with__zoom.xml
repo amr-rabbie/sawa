@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_item__images__with__zoom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context="solversteam.aveway.Activities.ShowItem_Images_With_Zoom">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <solversteam.aveway.utiltes.ViewPagerFixed
+        android:id="@+id/activity_details_item_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/horzintal_Scroll"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="8dp" />
+    <solversteam.aveway.utiltes.IndicatedHorizontalScrollView
+        android:id="@+id/horzintal_Scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/viewpagerCountDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </solversteam.aveway.utiltes.IndicatedHorizontalScrollView>
+
+</RelativeLayout>

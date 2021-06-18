@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="viewPager_margin_Top">4dp</dimen>
+    <dimen name="viewPager_margin_Left_Right">2dp</dimen>
+    <dimen name="main_activity_recycler_margin">2dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text">15.0dip</dimen>
+    <dimen name="drawerButtons">93.3dp</dimen>
+    <dimen name="drawerButtonsTop">3dp</dimen>
+    <dimen name="drawerLayoutText">11dp</dimen>
+    <dimen name="third">3dp</dimen>
+    <dimen name="sixteenth">16dp</dimen>
+    <dimen name="twentyfour">24dp</dimen>
+    <dimen name="eighth">8dp</dimen>
+    <dimen name="descriptionTextcontent">12dp</dimen>
+    <dimen name="descriptionTextheader">24dp</dimen>
+    <dimen name="reviewRatedtext">13dp</dimen>
+    <dimen name="reviewCountOfRated">9dp</dimen>
+    <dimen name="reviewcontent">10dp</dimen>
+    <dimen name="offertext">16dp</dimen>
+    <dimen name="strikelinetetx">14.0sp</dimen>
+    <dimen name="itemeHeader">15dp</dimen>
+    <dimen name="size">25sp</dimen>
+    <dimen name="topmargin">28dp</dimen>
+    <dimen name="profile_background_image_h">270dp</dimen>
+    <dimen name="profile_image_topmargin">80dp</dimen>
+    <dimen name="profile_icon_topmargin">26dp</dimen>
+    <dimen name="profil_size">20dp</dimen>
+    <dimen name="text_size_login_reg">15sp</dimen>
+    <!--<dimen name="drawerLayoutText">15dp</dimen>-->
+</resources>

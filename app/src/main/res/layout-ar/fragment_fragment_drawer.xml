@@ -1,0 +1,219 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:overScrollMode="never">
+
+    <RelativeLayout
+        android:id="@+id/menu_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context="solversteam.aveway.Fragments.FragmentDrawer">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="false"
+          >
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="20dp"
+                 app:srcCompat="@drawable/ave" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp"
+                android:layout_below="@+id/user_image">
+
+                <solversteam.aveway.utiltes.TextViewWithFont
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome"
+                    android:textColor="@color/White" />
+
+                <solversteam.aveway.utiltes.TextViewWithFont
+                    android:id="@+id/loginandsignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:text="@string/login"
+                     android:textColor="@color/White"
+                    android:visibility="gone"/>
+                <solversteam.aveway.utiltes.TextViewWithFont
+                    android:id="@+id/fragment_drawer_name_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="سار"
+                     android:textColor="@color/White"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:visibility="gone"
+
+
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:src="@mipmap/setting"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/relativeLayout2"
+            android:background="@color/light_green"
+            tools:ignore="MissingConstraints"
+            android:clickable="false">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                app:layout_constraintRight_toLeftOf="@+id/linearLayout5"
+                android:layout_marginRight="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                 >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/order"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/orderimage"
+                     android:layout_gravity="center"
+                     />
+
+                <solversteam.aveway.utiltes.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/drawerButtonsTop"
+                    android:text="طلباتي"
+                    android:textColor="@color/White"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/drawerLayoutText" />
+</LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="1dp"
+                />
+            <LinearLayout
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                 android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address2"
+                    android:orientation="vertical"
+                     android:layout_margin="5dp"
+                    >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/addressimage"
+
+                     />
+                <solversteam.aveway.utiltes.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="@dimen/drawerButtonsTop"
+                    android:text="عناوين"
+                    android:textColor="@color/White"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/drawerLayoutText" />
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/categories_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/constraintLayout"
+            android:fitsSystemWindows="true"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/divider"
+            android:layout_below="@+id/categories_list"
+            android:background="@color/avecolor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@+id/divider"
+            android:id="@+id/drawer_layout_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fitsSystemWindows="true"
+            />
+
+
+
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

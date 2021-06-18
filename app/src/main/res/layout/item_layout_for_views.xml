@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <solversteam.aveway.utiltes.TextViewWithFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Tablets and Mobiles"
+            android:textSize="18dp"
+            android:textColor="@color/linktext"
+            android:background="@drawable/item_clicked"
+            android:id="@+id/item_layout_for_views_categories"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/sixteenth"
+            android:id="@+id/item_layout_for_views_seenORclear"
+            android:text="@string/SeeAll"
+            android:textColor="@color/linktext"
+            android:textSize="@dimen/itemeHeader"
+            android:background="@drawable/item_clicked"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/main_activity_items_scroll"
+        android:scrollbars="none"
+        android:overScrollMode="always">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/main_activity_items_layout"/>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text_size_login_reg"
+        android:textColor="@color/avecolor"
+        android:text="@string/contact"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text"
+        android:textColor="@color/black"
+        android:text="Feel free to contact us if you need help"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="@string/email"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:background="@color/avecolor"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="@string/mobile"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="sawamall@gmail.com"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:background="@color/avecolor"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="011256545556655"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/address"
+            android:drawableLeft="@drawable/ic_add_location_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="cairo nasr city"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:textColor="@color/avecolor"
+        android:id="@+id/name"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColorHint="@color/avecolor"
+        android:hint="@string/Name"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/container"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:textColor="@color/avecolor"
+        android:id="@+id/email"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColorHint="@color/avecolor"
+        android:hint="@string/email"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColor="@color/avecolor"
+        android:id="@+id/message"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColorHint="@color/avecolor"
+        android:hint="@string/message"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="100dp" />
+    <Button
+        android:id="@+id/send"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:text="@string/send"
+        android:background="@color/avecolor"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>

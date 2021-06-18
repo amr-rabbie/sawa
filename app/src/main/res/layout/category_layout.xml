@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout_containerbar">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/activity_categories_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/e3"
+                android:scaleType="fitXY"/>
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/prog"
+                    style="@style/CircularProgress"
+
+                    />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha=".6"
+                    android:id="@+id/bar_card"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/Black"
+                    android:orientation="vertical">
+
+                <solversteam.aveway.utiltes.TextViewWithFont
+                    android:id="@+id/activity_categories_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hoba"
+                    android:gravity="center"
+                    android:paddingLeft="4dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="11dp" />
+                </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

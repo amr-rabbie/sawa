@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ls="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollview"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rel"
+                android:layout_height="wrap_content">
+                <solversteam.aveway.utiltes.CustomMapView
+                    android:layout_width="match_parent"
+                    android:id="@+id/mapview"
+                    android:layout_height="wrap_content">
+
+                </solversteam.aveway.utiltes.CustomMapView>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/rel"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add shipping address"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/aluminum"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                </LinearLayout>
+                <!--  Name Label -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/First_Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/firstname_"
+                            android:textColor="@color/Black"
+                            android:textColorHint="@color/Black"
+                            android:inputType="textCapWords"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@color/boticoncolor" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/Last_Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lastname_"
+                            android:inputType="textCapWords"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@color/boticoncolor" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- Email Label -->
+                <com.satsuware.usefulviews.LabelledSpinner
+                    android:id="@+id/country_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelText="@string/selectcountry"
+                    ls:labelText="countries"
+                    ls:widgetColor="#F44336" />
+
+                <com.satsuware.usefulviews.LabelledSpinner
+                    android:id="@+id/city_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelText="@string/selectcity"
+                    ls:labelText="countries"
+                    ls:widgetColor="#F44336" />
+                <!-- Password Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/address"
+                        android:textColor="@color/Black"
+                        android:maxLength="100"
+                        android:textColorHint="@color/Black"
+                        android:cursorVisible="true"
+                        android:textCursorDrawable="@color/boticoncolor" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.satsuware.usefulviews.LabelledSpinner
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:labelText="Location Type"
+                        app:spinnerEntries="@array/location"
+                        ls:labelText="countries"
+                        ls:widgetColor="#F44336" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/MobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile Number*"
+                            android:textColor="@color/Black"
+                            android:textColorHint="@color/Black"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@color/boticoncolor" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- Signup Button -->
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_save_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/black"
+                    android:padding="12dp"
+                    android:text="@string/saveaddress"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/descriptionTextheader" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

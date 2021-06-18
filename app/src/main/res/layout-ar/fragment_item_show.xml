@@ -1,0 +1,532 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="solversteam.aveway.Fragments.ItemShowFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/activity_item_selected_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/MainBackground"
+        tools:context="solversteam.aveway.Activities.ItemSelectedShowActivity">
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fitsSystemWindows="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/activity_details_item_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <LinearLayout
+                        android:id="@+id/viewpagerCountDots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/activity_details_item_viewpager"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/eighth"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/eighth" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/offerContainer"
+                        android:background="@color/offerbackground">
+
+                        <solversteam.aveway.utiltes.TextViewWithFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="@dimen/third"
+                            android:paddingLeft="@dimen/reviewcontent"
+                            android:paddingRight="@dimen/reviewcontent"
+                            android:paddingTop="@dimen/third"
+                            android:text="7% OFF"
+                            android:id="@+id/acrivity_details_offer"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/offertext" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_details_fav_shop_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="@dimen/eighth"
+                        android:orientation="vertical"
+                        android:paddingBottom="32dp"
+                        android:paddingLeft="@dimen/sixteenth">
+
+                        <ImageView
+                            android:id="@+id/activity_details_fav_Image_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/sixteenth"
+                            android:background="@mipmap/ic_wishlist_outline_disabe" />
+
+                        <ImageView
+                            android:id="@+id/activity_details_shop_image_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_cart_outline_occ" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/MainBackground" />
+                <solversteam.aveway.utiltes.TextViewWithFont
+
+                    android:layout_gravity="start"
+                    android:layout_margin="@dimen/sixteenth"
+                    android:id="@+id/seller_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/eighth"
+
+
+                    android:textColor="@color/avecolor"
+                    android:textSize="@dimen/strikelinetetx" />
+                <solversteam.aveway.utiltes.TextViewWithFont
+                    android:id="@+id/item_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="@dimen/sixteenth"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/offertext" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/sixteenth"
+                        android:layout_marginRight="@dimen/offertext"
+                        android:layout_weight="1.5"
+                        android:orientation="vertical">
+
+                        <solversteam.aveway.utiltes.TextViewWithFont
+                            android:id="@+id/acrivity_details_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/offertext"
+                            android:textStyle="bold" />
+
+                        <solversteam.aveway.utiltes.TextViewWithFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/eighth"
+                            android:background="@drawable/strike_line"
+                            android:text="3,649.00 EGP"
+                            android:id="@+id/acrivity_details_prev_price"
+                            android:textColor="@color/wallet_hint_foreground_holo_light"
+                            android:textSize="@dimen/strikelinetetx" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/eighth"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/fragment_item_show_image"
+
+                             />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/eighth"
+                            android:background="@drawable/footer_separator" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/viewPager_margin_Top"
+                        android:layout_marginLeft="@dimen/eighth"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:background="@mipmap/ic_star_yellow" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:background="@mipmap/ic_star_yellow" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:background="@mipmap/ic_star_yellow" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:background="@mipmap/ic_star_yellow" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:background="@mipmap/ic_star_yellow" />
+                        </LinearLayout>
+
+                        <solversteam.aveway.utiltes.TextViewWithFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="40 reviews"
+                            android:textColor="@color/linktext" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/MainBackground" />
+
+                <LinearLayout
+                    android:id="@+id/activity_details_some_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MainBackground"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#c1f4f4f4"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/viewPager_margin_Top"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/activity_details_deliver_car"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/sixteenth"
+                            android:src="@drawable/truck" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/eighth"
+                            android:orientation="vertical">
+
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/City"
+                                android:textColor="@color/Black"
+                                android:textSize="@dimen/descriptionTextcontent" />
+
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/day"
+                                android:textColor="@color/Black"
+                                android:textSize="@dimen/strikelinetetx"
+                                android:visibility="gone"
+
+                                android:layout_marginRight="32dp"
+                                android:layout_marginLeft="32dp"/>
+                        </LinearLayout>
+
+                        <solversteam.aveway.utiltes.TextViewWithFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+
+                            android:layout_marginLeft="@dimen/eighth"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:text="@string/changeCity"
+                            android:textColor="#018eec" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/eighth"
+                        android:background="#c1f4f4f4"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/viewPager_margin_Top">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/sixteenth"
+                            android:id="@+id/activity_details_add_to_chart_button"
+                            android:background="@color/light_green"
+                            android:text="@string/AddtoChart"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/descriptionTextheader" />
+                    </LinearLayout>
+
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/third"-->
+                        <!--android:layout_marginRight="@dimen/third"-->
+                        <!--android:layout_marginTop="@dimen/sixteenth">-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:id="@+id/activity_details_seller_data"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@drawable/item_clicked"-->
+                            <!--android:padding="@dimen/sixteenth">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_alignParentRight="true"-->
+                                <!--android:orientation="vertical">-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:text="@string/Seller" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/activity_details_seller_name"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:text="DOD-EGY"-->
+                                    <!--android:textColor="@color/Black"-->
+                                    <!--android:textSize="@dimen/descriptionTextheader"-->
+                                    <!--android:textStyle="bold" />-->
+
+                                <!--<LinearLayout-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="@dimen/eighth"-->
+                                    <!--android:orientation="horizontal">-->
+
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:src="@mipmap/ic_thumb_up_green_18dp" />-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/activity_details_seller_rating"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_gravity="top"-->
+                                        <!--android:layout_marginRight="8dp"-->
+                                        <!--android:text="92% positive rating based on 35492 ratings"-->
+                                        <!--android:textColor="@color/Black"-->
+                                        <!--android:textSize="12dip" />-->
+                                <!--</LinearLayout>-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="@dimen/eighth"-->
+                                    <!--android:text="Seller note" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/activity_details_seller_note"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:text="Official Warranty"-->
+                                    <!--android:textColor="@color/Black"-->
+                                    <!--android:textSize="@dimen/descriptionTextheader"-->
+                                    <!--android:textStyle="bold" />-->
+                            <!--</LinearLayout>-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:src="@mipmap/ic_arrow_nav_next" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</android.support.v7.widget.CardView>-->
+
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/third"-->
+                        <!--android:layout_marginRight="@dimen/third"-->
+                        <!--android:layout_marginTop="@dimen/sixteenth">-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:padding="@dimen/sixteenth"-->
+                            <!--android:background="@drawable/item_clicked">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal">-->
+
+                                <!--<LinearLayout-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:background="@drawable/offers_count_squar"-->
+                                    <!--android:paddingBottom="@dimen/eighth"-->
+                                    <!--android:paddingLeft="@dimen/sixteenth"-->
+                                    <!--android:paddingRight="@dimen/sixteenth"-->
+                                    <!--android:paddingTop="@dimen/eighth">-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/activity_details_offers_count"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_gravity="center|center_horizontal"-->
+                                        <!--android:layout_weight="1"-->
+                                        <!--android:gravity="center"-->
+                                        <!--android:text="10"-->
+                                        <!--android:textColor="@color/Black"-->
+                                        <!--android:textSize="@dimen/offertext"-->
+                                        <!--android:textStyle="bold" />-->
+                                <!--</LinearLayout>-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/activity_details_offers"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:layout_marginRight="@dimen/eighth"-->
+                                    <!--android:text="Offers from 74.00 EGP"-->
+                                    <!--android:textColor="@color/Black"-->
+                                    <!--android:textSize="@dimen/strikelinetetx" />-->
+                            <!--</LinearLayout>-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:src="@mipmap/ic_arrow_nav_next" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</android.support.v7.widget.CardView>-->
+
+                    <LinearLayout
+                        android:id="@+id/activity_details_description_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/twentyfour"/>
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/activity_details_review_viewpager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:id="@+id/activity_details_reviews_linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twentyfour"
+                        android:layout_marginLeft="@dimen/sixteenth"
+                        android:layout_marginRight="@dimen/sixteenth"
+                        android:background="@color/White">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/item_clicked"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:id="@+id/write_review"
+                            android:padding="@dimen/sixteenth">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_rate_review_black_24dp"/>
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/strikelinetetx"
+                                android:textColor="@color/linktext"
+                                android:text="@string/WriteReview"
+                                android:layout_marginRight="@dimen/sixteenth"/>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <LinearLayout
+                        android:id="@+id/activity_details_views_linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:orientation="vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

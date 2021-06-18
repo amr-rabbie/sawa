@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">SawaMall</string>
+    <string name="app_nam">SawaMall</string>
+    <string name="categories">Categories</string>
+    <string name="MyWallet">My Wallet</string>
+    <string name="ViewHistory">View History</string>
+    <string name="ReferandEarn">Refer  Earn</string>
+    <string name="HelpCenter">Help Center</string>
+    <string name="RateUs">Rate Us</string>
+    <string name="LogOut">Log Out</string>
+    <string name="Home">Home</string>
+    <string name="NoDataArrived">No Data Arrived</string>
+    <string name="SeeAll">See All</string>
+    <string name="ClearAll">Clear All</string>
+    <string name="RecentlySeen">Recently Viewed Items</string>
+    <string name="FindBeastDeal">Find Best Deal</string>
+    <string name="BrowseByCategory">Browse By Category</string>
+    <string name="TabletsandMobiles">Tablets and Mobiles</string>
+    <string name="changeCity">Change\nCity</string>
+    <string name="City">Ship to <b>Cairo</b></string>
+    <string name="day">Delivered by <b>Saturday , Feb 4</b></string>
+    <string name="AddtoChart"><b>Add TO Cart</b></string>
+    <string name="ReadFullReview">Read Full Review</string>
+    <string name="Seller">Seller</string>
+    <string name="shortdetails">short details</string>
+    <string name="Description">Description</string>
+    <string name="ReadMore">Read More</string>
+    <string name="Specifications">Specifications</string>
+    <string name="Rated">Rated</string>
+    <string name="Color">Color</string>
+    <string name="WriteReview">Write Review</string>
+    <string-array name="countries">
+        <item>UAE</item>
+        <item>Bahrain</item>
+        <item>Oman</item>
+        <item>Qatar</item>
+    </string-array>
+    <string-array name="city">
+        <item>Aali</item>
+        <item>Adliya</item>
+        <item>Al-Malikiyah</item>
+        <item>Budaiya</item>
+        <item>Hamad Town</item>
+        <item>Isa Town</item>
+        <item>Jidhafs</item>
+        <item>Manama</item>
+        <item>Muharraq</item>
+        <item>Riffa</item>
+    </string-array>
+    <string-array name="location">
+        <item>Home</item>
+        <item>Business</item>
+    </string-array>
+    <string-array name="Time">
+        <item>9:00AM-1:00PM</item>
+        <item>1:00PM-5:00PM</item>
+        <item>5:00PM-9:00PM</item>
+    </string-array>
+    <string-array name="shipping">
+        <item>today</item>
+        <item>tomorrow</item>
+        <item>2 days</item>
+        <item>3 days</item>
+        <item>4 days</item>
+        <item>5 days</item>
+        <item>6 days</item>
+        <item>week</item>
+    </string-array>
+    <string name="edittext_hint"><font size="12">Hint here!</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="DrawerIsOPend">"Drawer Is Opend"</string>
+    <string name="DrawerIsClosed">"Drawer Is Closed"</string>
+    <string name="readLess">Read Less</string>
+    <string name="readMore">Read More</string>
+    <string-array name="account">
+        <item>My orders</item>
+        <item>My wishlist</item>
+        <item>My adress</item>
+        <item>Country and language</item>
+        <item>Contact us</item>
+        <item>Call us</item>
+        <item>Share with friends</item>
+        <item>Leave fedback</item>
+        <item>Rate us on play store</item>
+    </string-array>
+    <string name="account">My Account</string>
+    <string name="apply">apply</string>
+    <string name="lang">Select Language</string>
+    <string name="country">Select Country</string>
+    <string name="shippingcountry">-Select International Shipping Country-</string>
+    <string name="pref_locale">en</string>
+    <string-array name="Languages">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+    <string name="login">Login</string>
+    <string name="Countryandlanguage">Country and language</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="userName">user name</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="birthdate">BirthDate</string>
+    <string name="signwithfacebook">Sign in with Facebook </string>
+
+    <string name="confoirmpassword">Confirm Password</string>
+    <string name="showpassword">Show Password</string>
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <string name="myAccount">my Account</string>
+    <string name="myWishList">my Wishlist</string>
+    <string name="allCategories">view all categories</string>
+    <string name="myCart">my Cart</string>
+    <string name="updateprofile">Update Profile</string>
+    <string name="cancel">Cancel</string>
+    <string name="welcome">Welcome</string>
+    <string name="address">Address*</string>
+    <string name="firstname_">FirstName*</string>
+    <string name="lastname_">LastName*</string>
+    <string name="selectcountry">Please Select Country*</string>
+    <string name="selectcity">Please Select City*</string>
+    <string name="mobile_">Mobile Number*</string>
+    <string name="locationtype">Location Type</string>
+    <string name="saveaddress">Save Address</string>
+    <string name="creditcard">Credit Card</string>
+    <string name="cashondelivery">Cash On Delivery</string>
+    <string name="selectpaymentoption">Select Payment Option</string>
+    <string name="checkout">CheckOut</string>
+    <string name="youadd">Item add to Cart</string>
+    <string name="No">NO</string>
+    <string name="yes">yes</string>
+    <string name="close_app">Are You Sure You Want To Exit </string>
+    <string name="addfav">product add to your wishlist</string>
+    <string name="removefav">product removed from your wishlist</string>
+    <string name="msg_cart">Your Cart is empty</string>
+    <string name="msg_wish">Your wish list is empty</string>
+    <string name="msg_cart_wish_2">Please fill it with you wish</string>
+    <string name="btnpop">Check out our products and enjoy the offers</string>
+    <string name="addaddress">My Address</string>
+    <string name="addship">Select  shipping Companies</string>
+    <string name="check">CHECK OUT</string>
+    <string name="checkpass">Password you entered is incorrect</string>
+    <string name="editp">Edite Profile</string>
+    <string name="option">Payment option</string>
+    <string name="ordernum">Order number</string>
+    <string name="totalg">grand total</string>
+    <string name="doneorder">order has been done successfully</string>
+    <string name="optorder">It was selected payment on delivery</string>
+    <string name="back">enjoy our products</string>
+    <string name="selectship">Please Select shipping city</string>
+    <string name="msglogin">you have to sign in your account</string>
+    <string name="myorder">My orders</string>
+    <string name="price">price</string>
+    <string name="ptotalrice">Total price</string>
+    <string name="shiping">shipping price</string>
+    <string name="date">Order date</string>
+    <string name="deldate">Delvery date</string>
+    <string name="Name">name</string>
+    <string name="contact">Contact us</string>
+    <string name="call">About us</string>
+    <string name="share">Share with friends</string>
+    <string name="feed">FeedBack</string>
+    <string name="rate">Rate Us on PlayStore</string>
+    <string name="status">status</string>
+    <string name="tracking_number">Tracking Number :</string>
+    <string name="expected_delivery">Expected Delivery :</string>
+    <string name="type">order payment type</string>
+    <string name="myaddress">my addresses</string>
+    <string name="search">Search</string>
+    <string name="results">items</string>
+    <string name="rtl">ltr</string>
+    <string name="qnt">qnt</string>
+    <string name="canceled">Canceled</string>
+    <string name="orderid">Order ID</string>
+    <string name="youalreadyadd">Product is already in cart</string>
+    <string name="required">required!</string>
+    <string name="recfirstname">Your firstname must match  and must be at least 2 characters in length</string>
+    <string name="reclastname">Your lastname must match  and must be at least 2 characters in length</string>
+    <string name="recpass">Your password must match  and must be at least 6characters in length</string>
+    <string name="recpassconfirm">Your Password doesn`t match</string>
+    <string name="recemail">Email Not Valid</string>
+    <string name="recbirth">Birthdate Not Valid</string>
+    <string name="valid">this email is already exist</string>
+    <string name="recmob">please enter your mobile number</string>
+    <string name="facebook_app_id">1423353397727165</string>
+    <string name="updte">there is no update</string>
+    <string name="addnewaddress">Add Address</string>
+    <string name="conf_order">confirm order</string>
+    <string name="atleast">it will be handed over to the transport company at least</string>
+    <string name="message">Message</string>
+    <string name="send">send</string>
+</resources>

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/include"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/orders"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:id="@+id/imag"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_clicked"
+                    android:id="@+id/free_shipping_text"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+
+
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/profile_image_image"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:src="@drawable/done"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerVertical="true"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text="تاريخ الطلب"
+                                            android:layout_weight="1"
+                                            android:textSize="16dp"
+                                            android:layout_gravity="right"
+                                            android:gravity="right"
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text=" "
+                                            android:layout_weight="1"
+                                            android:id="@+id/order_date"
+                                            android:textSize="16dp"
+                                            android:layout_gravity="left"
+                                            android:gravity="right"
+
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+
+                                        android:layout_height="wrap_content">
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text="الطلب بأسم"
+                                            android:layout_weight="1"
+                                            android:textSize="16dp"
+                                            android:gravity="right"
+
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:gravity="right"
+                                            android:layout_weight="1"
+                                            android:textSize="16dp"
+                                            android:id="@+id/order_name"
+                                            android:layout_gravity="left"
+
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+
+                                        android:layout_height="wrap_content">
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text="العنوان"
+                                            android:gravity="right"
+
+                                            android:layout_weight="1"
+                                            android:textSize="16dp"
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                        <solversteam.aveway.utiltes.TextViewWithFont
+                                            android:layout_width="match_parent"
+                                            android:text=" "
+                                            android:layout_weight="1"
+                                            android:textSize="16dp"
+                                            android:id="@+id/order_adress"
+                                            android:layout_gravity="left"
+                                            android:gravity="right"
+
+                                            android:textColor="?android:textColorHint"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            >
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="طريقة الدفع: "
+                                android:layout_gravity="start"
+                                android:textSize="16dp"
+                                android:gravity="right"
+
+                                android:layout_weight="1"
+                                android:textColor="?android:textColorHint"
+                                android:layout_marginTop="8dp"/>
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="الدفع عند التوصيل"
+                                android:textSize="16dp"
+                                android:id="@+id/status_order"
+                                android:layout_gravity="left"
+                                android:gravity="right"
+                                android:textColor="?android:textColorHint"
+                                android:layout_marginTop="8dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="الاجمالي :"
+                                android:id="@+id/shippingprice"
+                                android:layout_gravity="start"
+                                android:layout_weight="1"
+                                android:gravity="right"
+
+                                android:textColor="?android:textColorHint"
+                                android:textSize="16dp"/>
+                            <solversteam.aveway.utiltes.TextViewWithFont
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:layout_weight="1"
+
+                                android:id="@+id/price"
+                                android:layout_gravity="left"
+                                android:gravity="right"
+                                android:textColor="?android:textColorHint"
+                                android:textSize="16dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@color/light_green"
+                                    android:padding="5dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="10dp"
+                                    android:gravity="center"
+                                    android:id="@+id/details"
+                                    android:text="Item Details "
+                                    android:layout_height="25dp"
+                                    android:visibility="gone"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="ثمن الشحن :"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+
+                                        android:id="@+id/description1"
+                                        android:layout_gravity="start|left"
+                                        android:clickable="true"
+                                        android:maxLines="1"
+                                        android:textSize="16dp"
+                                        android:textColor="?android:textColorHint"
+                                        />
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=" "
+                                        android:layout_weight="1"
+                                        android:layout_gravity="left"
+                                        android:gravity="right"
+                                        android:id="@+id/shipping"
+                                        android:clickable="true"
+                                        android:textSize="16dp"
+                                        android:textColor="?android:textColorHint"
+                                        />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/total"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="الاجمالي :"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="start|left"
+                                        android:gravity="right"
+                                        android:clickable="true"
+                                        android:maxLines="1"
+                                        android:textSize="16dp"
+                                        android:textColor="?android:textColorHint"
+                                        />
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=" "
+                                        android:gravity="right"
+
+                                        android:layout_weight="1"
+                                        android:layout_gravity="left"
+                                        android:id="@+id/totalprice"
+                                        android:clickable="true"
+                                        android:textSize="16dp"
+                                        android:textColor="?android:textColorHint"
+                                        />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/total2"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="ميعاد الشحن :"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+
+                                        android:layout_gravity="start|left"
+                                        android:clickable="true"
+                                        android:maxLines="1"
+                                        android:textSize="16dp"
+                                        android:textColor="?android:textColorHint"
+                                        />
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=" "
+                                        android:layout_weight="1"
+                                        android:layout_gravity="left"
+                                        android:id="@+id/shipping_date"
+                                        android:clickable="true"
+                                        android:textSize="16dp"
+                                        android:gravity="right"
+
+                                        android:textColor="?android:textColorHint"
+                                        />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/total3"
+
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=" بدء الشحن:"
+                                        android:gravity="right"
+
+                                        android:layout_marginStart="-3dp"
+                                        android:layout_marginLeft="-3dp"
+                                        android:id="@+id/description"
+                                        android:layout_gravity="center_vertical"
+
+                                        android:layout_weight="1"
+                                        android:textColor="?android:textColorHint"
+                                        android:textSize="16dp" />
+
+                                    <Spinner
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="june 23 ,2016"
+                                        android:id="@+id/estmatedate"
+                                        android:layout_weight="1"
+                                        android:textSize="16dp"
+                                        android:gravity="right"
+
+
+                                        />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/total4"
+
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=" وقت التسليم :"
+                                        android:layout_marginStart="-3dp"
+                                        android:layout_marginLeft="-3dp"
+                                        android:layout_gravity="center_vertical"
+
+                                        android:layout_weight="1"
+                                        android:textColor="?android:textColorHint"
+                                        android:textSize="16dp" />
+
+                                    <Spinner
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="june 23 ,2016"
+                                        android:id="@+id/time_delvery"
+                                        android:layout_weight="1"
+                                        android:textSize="16dp"
+                                        android:gravity="right"
+
+
+                                        />
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <solversteam.aveway.utiltes.ExpandableHeightGridView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Relativ_contain"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/list_view"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="تاريخ التسليم:"
+                                        android:layout_weight="1"
+
+                                        android:layout_gravity="start|left"
+                                        android:clickable="true"
+                                        android:maxLines="1"
+                                        android:textSize="16dp"
+                                        android:textColor="?android:textColorHint"
+                                        />
+                                    <solversteam.aveway.utiltes.TextViewWithFont
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="30 egp"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="left"
+                                        android:id="@+id/delverdate"
+                                        android:clickable="true"
+                                        android:textSize="16dp"
+                                        android:gravity="right"
+
+                                        android:textColor="?android:textColorHint"
+                                        />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <Button
+                            android:layout_marginTop="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="تأكيد الطلب"
+                            android:textColor="@color/white"
+                            android:id="@+id/confirm_btn"
+
+                            android:background="@color/light_green"/>
+
+                        <Button
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="الغاء الطلب"
+                            android:textColor="@color/white"
+                            android:id="@+id/cancel_btn"
+                            android:layout_marginBottom="30dp"
+
+                            android:background="@color/light_green"/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

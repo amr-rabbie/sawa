@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "479010357785",
+    "firebase_url": "https://psychic-trainer-90214.firebaseio.com",
+    "project_id": "psychic-trainer-90214",
+    "storage_bucket": "psychic-trainer-90214.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479010357785:android:37b34680ef41c434",
+        "android_client_info": {
+          "package_name": "solversteam.aveway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479010357785-hu2e7nm151dhhnigjk4eb9rnea2aakqj.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "479010357785-gj3jtt40bi6gf3888onrvtb41inc8l5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAESplBceZdGaFI8XqAsYx8EwnneVdMwAo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-61444293-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

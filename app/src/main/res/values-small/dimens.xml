@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="drawerLayoutText">8dp</dimen>
+    <dimen name="descriptionTextcontent">9dp</dimen>
+    <dimen name="descriptionTextheader">21dp</dimen>
+    <dimen name="reviewRatedtext">10dp</dimen>
+    <dimen name="reviewCountOfRated">6dp</dimen>
+    <dimen name="reviewcontent">7dp</dimen>
+    <dimen name="offertext">13dp</dimen>
+    <dimen name="strikelinetetx">11.0sp</dimen>
+    <dimen name="itemeHeader">12dp</dimen>
+    <dimen name="topmargin">8dp</dimen>
+    <dimen name="profile_background_image_h">200dp</dimen>
+    <dimen name="profile_image_topmargin">32dp</dimen>
+    <dimen name="profile_icon_topmargin">6dp</dimen>
+    <dimen name="profil_size">12dp</dimen>
+    <dimen name="text_size_login_reg">12sp</dimen>
+    <dimen name="facebooktext">9sp</dimen>
+
+    <dimen name="cat_text_font_size">5dp</dimen>
+</resources>

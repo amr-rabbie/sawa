@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_searchable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colordevider"
+    tools:context="solversteam.aveway.Activities.SearchActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:id="@+id/linear">
+    <include layout="@layout/toolbar"
+
+        android:id="@+id/include"/>
+    <include layout="@layout/searchable_toolbar"
+             android:id="@+id/activity_searchable_toolbar"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/boticon"
+        android:id="@+id/activity_searchable_line"
+        android:layout_below="@+id/linear"
+        android:orientation="horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/activity_searchable_line"
+        android:layout_margin="10dp"
+         android:textSize="20sp"
+        android:id="@+id/activity_search_result_textview"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:focusable="false"
+
+        android:id="@+id/activity_searchable_serachdata_recyclerview"
+        android:layout_below="@+id/activity_search_result_textview"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="5dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/details_sliding_image_container"
+    android:background="@color/White">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <solversteam.aveway.utiltes.TouchImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/details_sliding_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/prog"
+        style="@style/CircularProgress"
+        />
+</RelativeLayout>
+</LinearLayout>
+
